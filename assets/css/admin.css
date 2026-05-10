@@ -1,0 +1,146 @@
+/* Hochzeit Einladungen – Admin Styles */
+
+.he-wrap h1 { margin-bottom: 4px; }
+.he-subtitle { color: #888; font-size: 14px; margin-top: 0; margin-bottom: 24px; }
+
+/* Stats Grid */
+.he-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+.he-stat {
+    background: #fff;
+    border-radius: 8px;
+    border-left: 4px solid #ccc;
+    padding: 20px 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+}
+.he-stat--neutral { border-color: #2271b1; }
+.he-stat--green   { border-color: #00a32a; }
+.he-stat--red     { border-color: #d63638; }
+.he-stat--yellow  { border-color: #dba617; }
+
+.he-stat__num {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.he-stat--neutral .he-stat__num { color: #2271b1; }
+.he-stat--green   .he-stat__num { color: #00a32a; }
+.he-stat--red     .he-stat__num { color: #d63638; }
+.he-stat--yellow  .he-stat__num { color: #dba617; }
+
+.he-stat__label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 4px;
+    color: #1d2327;
+}
+.he-stat__sub {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* Progress bar */
+.he-progress-section { margin: 24px 0; }
+.he-progress-section h2 { font-size: 15px; margin-bottom: 8px; }
+.he-progress-bar {
+    background: #f0f0f1;
+    border-radius: 6px;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+}
+.he-progress-fill {
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 60px;
+    transition: width .4s ease;
+}
+.he-progress-fill--green { background: #00a32a; }
+.he-progress-legend { font-size: 13px; color: #555; margin-top: 6px; }
+
+/* Quick links */
+.he-quick-links { margin: 20px 0; }
+.he-quick-links .button { margin-right: 8px; }
+
+/* Card */
+.he-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    max-width: 800px;
+}
+.he-card h2 { margin-top: 0; }
+
+/* Table */
+.he-table { margin-top: 16px; }
+
+/* Badges */
+.he-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.he-badge--green  { background: #d8f5e3; color: #00612b; }
+.he-badge--red    { background: #fde8e8; color: #8c1c1c; }
+.he-badge--yellow { background: #fef3cd; color: #7a5800; }
+
+/* Danger button */
+.he-btn-danger { color: #d63638 !important; border-color: #d63638 !important; }
+.he-btn-danger:hover { background: #d63638 !important; color: #fff !important; }
+
+/* Auto-created (website) rows */
+.he-row--auto {
+    background: #fffbeb !important;
+}
+.he-row--auto:hover {
+    background: #fef9d7 !important;
+}
+
+/* Auto badge */
+.he-badge--auto {
+    background: #fff3cd;
+    color: #7a5800;
+    border: 1px solid #f0c940;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* Warning card variant */
+.he-card--warning {
+    border-left: 4px solid #dba617;
+    margin-bottom: 20px;
+}
+.he-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.he-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
